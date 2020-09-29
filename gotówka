@@ -1,0 +1,25 @@
+https://api-test.instarem.com:4803/api/v1/client/{clientId}/withdrawFund
+Example Request
+
+curl --request post \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/withdrawFund" \
+--data {
+    "clientBankId": "593feb7c5g32bb2357b2df6c",
+    "withdrawalAmount": "100",
+    "accountNumber": 107951243083
+}
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "withdrawFundId": "eb69f945-f507-4767-97da-03ef4fc55dce",
+    "status": "AUTO_APPROVED",
+    "clientId": "593feb7c7c52bb2357b2df6c",
+    "referenceNumber": "FW000985",
+    "clientBankId": "6e6b5ad0-f75d-11ea-8ea0-b18b03157cec",
+    "accountNumber": 107951243083,
+    "withdrawalAmount": "100",
+    "paymentId": "DEVPY10262677",
+    "subStatus": "",
+    "statusDescription": ""
+}
