@@ -1,0 +1,20 @@
+https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer
+Example Request
+
+curl --request post \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer" \
+--data {
+    "payerType": "COMPANY",
+    "companyName": "Nium India Pvt Ltd",
+    "website": "https://www.nium.com",
+    "payerName": "John Doe",
+    "email": "john.doe@nium.com",
+    "countryCode": "US"
+}
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+--header 'content-type: application/json' \
+Example Response
+
+{
+    "payerId": "eb69f945-f507-4767-97da-03ef4fc55dce"
+}
