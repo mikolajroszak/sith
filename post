@@ -1,0 +1,13 @@
+https://api-test.instarem.com:4803/api/v1/authentication
+Example Request
+
+curl --request post \
+--url "https://api-test.instarem.com:4803/api/v1/authentication" \
+
+--header 'client_key: 646328ryCV1T1Qb230681S1g0N1ayQZ' \
+--header 'client_secret: 0dfc9110-51a1-11e7-9c6a-efd0a4ece369' \
+Example Response
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzczMjksImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA1MDkyOX0.RJGjVrOiP_jYvVniAVxmLnyym2Ue4FwvBTz1wRbFoiM"
+}
