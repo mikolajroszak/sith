@@ -1,0 +1,22 @@
+ https://api-test.instarem.com:4803/api/v1/client/{clientId}/bankAccounts
+Example Request
+
+curl --request post \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/bankAccounts" \
+--data {
+    "countryCode": "SG",
+    "currencyCode": "SGD",
+    "bankName": "Citibank",
+    "accountType": "Individual",
+    "accountNumber": "60001234569",
+    "routingCodeType1": "ACH CODE",
+    "routingCodeValue1": "111000025",
+    "routingCodeType2": "SWIFT",
+    "routingCodeValue2": "ADCBINBB123"
+}
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "bankAccountId": "03bd58a0-f726-11ea-ab6c-414e561364fe"
+}
