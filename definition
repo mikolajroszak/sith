@@ -1,0 +1,35 @@
+ https://api-test.instarem.com:4803/api/v1/client/{clientId}/payers
+Example Request
+
+curl --request get \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/payers?countryCode=&fromDate=&toDate=&start=&limit=" \
+
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "records": [
+        {
+            "payerId": "eb69f945-f507-4767-97da-03ef4fc55dce",
+            "companyName": "Nium India Pvt Ltd",
+            "website": "https://www.nium.com",
+            "name": "John Doe",
+            "email": "john.doe@nium.com",
+            "type": "COMPANY",
+            "countryCode": "US",
+            "countryName": "USA",
+            "currency": "USD",
+            "virtualReceivingAccountNumber": "9675538220127460",
+            "bankAccountName": "Nium India",
+            "bankName": "DBS Hong Kong",
+            "bankAddress": "Hong Kong",
+            "bankRoutingDetails": {
+                "routing_code_1": "IFSC CODE",
+                "routing_value_1": "SBIN0000058",
+                "routing_code_2": "IFSC CODE",
+                "routing_value_2": "259087"
+            }
+        }
+    ],
+    "total": 234
+}
