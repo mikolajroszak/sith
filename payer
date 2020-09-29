@@ -1,0 +1,42 @@
+https://api-test.instarem.com:4803/api/v1/client/{clientId}/virtual-receiving-account-statement/{virtualReceivingAccountId}
+Example Request
+
+curl --request get \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/virtual-receiving-account-statement/{virtualReceivingAccountId}?status=&start=&length=" \
+
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "currencyCode": "USD",
+    "virtualReceivingAccountId": "62616d73-8e19-4522-8eac-e456a68b11ab",
+    "virtualAccountNumber": "907654315445678",
+    "payerName": "SBI Remit Co. LTD",
+    "transactionCountByStatus": {
+        "APPROVED": 8,
+        "REJECTED": 1,
+        "ALL": 9,
+        "IN-PROCESS": 1
+    },
+    "transactions": [
+        {
+            "transactionId": "32696a9a-a376-4687-87b0-443231a29dde",
+            "status": "COMPLIANCE_VERIFICATION",
+            "content": "PR00001",
+            "statusDescription": "In process",
+            "transactionReferenceNumber": "0016IT8449488",
+            "payerBankId": "BARCGB22XXX",
+            "payerName": "SBI Remit Co. LTD",
+            "paymentDetail": "PET508309136",
+            "amount": 10000.12,
+            "paymentReceivedAt": "2019-08-06T00:00:00",
+            "glReferenceNumber": "",
+            "complianceId": "",
+            "complianceStatus": "",
+            "currencyCode": "",
+            "payerAccountNumber": "",
+            "virtualReceivingAccountId": "",
+            "virtualReceivingAccountNumber": ""
+        }
+    ]
+}
