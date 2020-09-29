@@ -1,0 +1,20 @@
+ https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}
+Example Request
+
+curl --request get \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}" \
+
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "companyName": "Nium India Pvt Ltd",
+    "website": "https://www.nium.com",
+    "name": "John Doe",
+    "email": "john.doe@nium.com",
+    "type": "COMPANY",
+    "country": {
+        "countryCode": "US",
+        "countryName": "USA"
+    }
+}
