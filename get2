@@ -1,0 +1,38 @@
+ https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}/paymentRequest
+Example Request
+
+curl --request get \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}/paymentRequest?fromDate=&toDate=&start=&count=&currencyCode=" \
+
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "filteredRecords": [
+        {
+            "paymentRequestId": "eb69f945-f507-4767-97da-03ef4fc55dce",
+            "amount": 1000.12,
+            "description": "Payment Request from API",
+            "dueDate": "2019-11-10",
+            "paymentTerms": "NET30",
+            "paymentReferenceNumber": "PO0002",
+            "prId": "PR0002",
+            "status": "PAID",
+            "payer": {
+                "payerId": "ee0f344e-bbc7-4f33-a366-39386584cb30",
+                "payerCompanyName": "Nium India Pvt Ltd",
+                "payerCompanyWebsite": "https://www.nium.com",
+                "payerName": "John Doe",
+                "payerEmailId": "john.doe@nium.com",
+                "payerType": "COMPANY"
+            },
+            "currency": {
+                "currencySymbol": "€",
+                "currencyCode": "EUR"
+            },
+            "createdAt": "2019-11-14T06:30:05.443Z",
+            "updatedAt": "2019-11-14T06:30:05.443Z"
+        }
+    ],
+    "totalRecords": 100
+}
