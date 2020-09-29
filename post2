@@ -1,0 +1,32 @@
+https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}/paymentRequest
+Example Request
+
+curl --request post \
+--url "https://api-test.instarem.com:4803/api/v1/client/{clientId}/payer/{payerId}/paymentRequest" \
+--data {
+    "clientId": "593feb7c5g32bb2357b2df6c",
+    "payerId": "eb69f945-f507-4767-97da-03ef4fc55dce",
+    "amount": 1000.12,
+    "description": "Payment Request from API",
+    "dueDate": "2019-11-10",
+    "terms": "NET30",
+    "paymentReferenceNumber": "PR200",
+    "currencyCode": "EUR",
+    "payReqDocs": ""
+}
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTgxMzQ4OTQsImRhdGEiOnsic3ViIjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWE1IiwiY2xpZW50IjoiNTk0MjNmMzZjZWEyMTQ2OTI2ODczOWExIn0sImlhdCI6MTQ5ODA0ODQ5NH0.pevwSDpk-JDNtVIpqFu_m0Xu1UnDVumrAYStcrxf8sM' \
+Example Response
+
+{
+    "paymentRequestId": "c2e1cd87-b182-4089-8801-c91ab0ece5da",
+    "virtualAccount": "9675538230127460",
+    "bankAccountName": "Instarem India",
+    "bankName": "DBS Hong Kong",
+    "bankAddress": "Hong Kong",
+    "bankRoutingDetails": {
+        "routing_code_1": "IFSC CODE",
+        "routing_value_1": "SBIN0000058",
+        "routing_code_2": "IFSC CODE",
+        "routing_value_2": "259087"
+    }
+}
